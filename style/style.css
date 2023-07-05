@@ -1,0 +1,71 @@
+body{
+    background-color: #f4f5f7;
+    font-family: Vazir;
+}
+:root{
+    --gary:#999;
+}
+@font-face{
+    font-family: "Vazir";
+    src: url(/Font/Vazir-Bold.eot) format("eot");
+}
+
+
+.main-container{
+    width:820px;
+    max-width: 95vw;
+}
+
+.input,.select-group label{
+    color: #999;
+}
+
+.resume-pages-list li{
+    cursor: pointer;
+    color: var(--gary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.page{
+    height: 230px ;
+}
+
+.section-title {
+    height: 40px;
+}
+
+#selectImgBTN::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+#selectImgBTN{
+    width:40px;
+	height:25px;
+    right: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+    cursor: pointer;
+}
+
+.select-img i{
+    z-index: 2;
+}
+
+.user-img{
+    background-color:rgba(128, 128, 128, 0.264) ;
+    border-color: var(--gary);
+    width: 110px ;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.input,.select-group,.year .form-label{
+    font-size: 0.9rem;
+}
+
+select option{
+    font-size: 0.8rem ;
+}
