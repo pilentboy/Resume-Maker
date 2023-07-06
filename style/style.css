@@ -16,7 +16,7 @@ body{
     max-width: 95vw;
 }
 
-.input,.select-group label{
+.input,.select-group,.year label{
     color: #999;
 }
 
@@ -63,7 +63,12 @@ body{
 }
 
 .input,.select-group,.year .form-label{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+
+.year input[type=text]{
+   padding: 3px 5px  ;
 }
 
 select option{
