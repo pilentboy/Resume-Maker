@@ -85,7 +85,7 @@ select option{
     text-align: justify;
 }
 
-#addMoreSMBox{
+#addMoreSMBoxBTN{
     bottom: -30%;
     left: 50%;
     background-color: orange;
@@ -95,7 +95,7 @@ select option{
     height: 40px;
 }
 
-#addMoreSMBox:hover{
+#addMoreSMBoxBTN:hover{
     background-color: rgba(255, 166, 0, 0.66);
 
 }

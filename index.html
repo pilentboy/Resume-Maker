@@ -35,6 +35,7 @@
 
   <body class="vw-100 overflow-x-hidden">
     <div class="main-container mx-auto my-5 min-vh-50">
+
       <!-- RESUME PAGES TITLES -->
       <ul
         class="resume-pages-list justify-content-around align-items-center shadow-sm list-unstyled bg-white py-3 row px-3"
@@ -395,66 +396,136 @@
         </section>
 
         <!-- social media -->
-        <section id="contactInfo" class="row page mt-4  mb-5">
+        <section id="socialMedia" class="row page mt-4 mb-5">
           <span class="text-dark col py-2 mx-0 section-title">
             شبکه اجتماعی</span
           >
           <!-- inputs -->
-          <div
-            class="section-inputs m-0  justify-content-between  px-3 row  "
+          <div id="soialMediaBox" class="section-inputs d-none my-2 justify-content-between px-3 row ">
+            <div
+              class="col-6 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+
+            <div
+              class="col-6 py-4 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group py-4 col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+          </div>
+
+          <div  class="section-inputs my-2 justify-content-between px-3 row">
+            <div
+              class="col-6 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+
+            <div
+              class="col-6 py-4 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group py-4 col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+          </div>
+
+
+          
+
+          <!-- add more social media box-->
+          <div id="addMoreBox"
+            class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
           >
-          <div class="col-6  row align-items-center bg-white border border-white shadow-sm  ">
-            <div class="select-group col-4 ">
-              <label for="inputPassword5" class="form-label "> شبکه اجتماعی</label>
-              <select
-                class="form-select col-2 py-2 form-select-sm mb-3"
-                aria-label=".form-select-lg example"
-              >
-                <option selected></option>
-                <option value="">لینکدین</option>
-                <option value="">گیت هاب</option>
-              </select>
-            </div>
-
-            <div class="select-group col-8 ">
-              <label for="inputPassword5" class="form-label ">آی دی مرتبط</label>
-              <input type="text" class="form-control py-1   ">
-            </div>
-
+            <span class=""> شبکه اجتماعی دیگری را اضافه کنید </span>
+            <button
+              id="addMoreSMBoxBTN"
+              class="d-flex justify-content-center border-0 position-absolute"
+            >
+              <i class="bi bi-plus text-white my-1 h2"></i>
+            </button>
           </div>
-
-          <div class="col-6 py-4  row  align-items-center bg-white border border-white shadow-sm  ">
-            <div class="select-group col-4 ">
-              <label for="inputPassword5" class="form-label"> شبکه اجتماعی</label>
-              <select
-                class="form-select col-2 py-2 form-select-sm mb-3"
-                aria-label=".form-select-lg example"
-              >
-                <option selected></option>
-                <option value="">لینکدین</option>
-                <option value="">گیت هاب</option>
-              </select>
-            </div>
-
-            <div class="select-group py-4 col-8">
-              <label for="inputPassword5" class="form-label">آی دی مرتبط</label>
-              <input type="text" class="form-control py-1">
-            </div>
-
-          </div>
-        
-        </div>
-
-        <div class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white ">
-          <span class="">
-            شبکه اجتماعی دیگری را اضافه کنید
-          </span>
-          <button id="addMoreSMBox" class="d-flex justify-content-center border-0 position-absolute ">
-            <i class="bi bi-plus text-white my-1 h2 "></i>
-          </button>
-        </div>
         </section>
+
+
       </div>
+
+
     </div>
 
     <!-- JS file --->
