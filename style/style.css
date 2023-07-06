@@ -20,6 +20,11 @@ body{
     color: #999;
 }
 
+.add-more span{
+    color: #999;
+    font-size: 0.9rem;
+}
+
 .resume-pages-list li{
     cursor: pointer;
     color: var(--gary);
@@ -78,4 +83,19 @@ select option{
 .section-inputs  p{
     font-size: 0.9rem;
     text-align: justify;
+}
+
+#addMoreSMBox{
+    bottom: -30%;
+    left: 50%;
+    background-color: orange;
+    border-radius: 50%;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+}
+
+#addMoreSMBox:hover{
+    background-color: rgba(255, 166, 0, 0.66);
+
 }
