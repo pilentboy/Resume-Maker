@@ -33,7 +33,7 @@ body{
 }
 
 .page{
-    height: 230px ;
+    min-height: 230px ;
 }
 
 .section-title {
@@ -94,8 +94,15 @@ select option{
     width: 40px;
     height: 40px;
 }
+p{
+    text-align: justify !important;
+}
 
 #addMoreSMBoxBTN:hover{
     background-color: rgba(255, 166, 0, 0.66);
 
+}
+
+#page1 section{
+    margin-top:40px;
 }

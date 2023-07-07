@@ -75,11 +75,11 @@
           >
           <!-- inputs -->
           <div
-            class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row"
+            class="section-inputs   bg-white shadow-sm border border-white py-4 px-3 row"
           >
             <!-- image-->
             <div
-              class="picture col-2 d-flex flex-column text-center align-items-center"
+              class="picture col-12 col-md-2 d-flex flex-column text-center align-items-center"
             >
               <div
                 class="user-img d-flex justify-content-center align-items-center my-2"
@@ -90,7 +90,7 @@
                 <input
                   type="file"
                   id="selectImgBTN"
-                  class="bg-primary px-2 py-1 text-center"
+                  class="bg-primary px-2 py-1 text-center"  accept="image/*"
                 />
                 <div
                   class="file-btn bg-primary py-1 px-3 text-center text-white"
@@ -100,19 +100,19 @@
               </div>
             </div>
             <!-- form inputs -->
-            <div class="inputs col-10 d-flex flex-column">
-              <div class="text-type-inputs row">
-                <div class="input col-4">
+            <div class="inputs col-md-10   d-flex flex-column">
+              <div class="text-type-inputs align-items-center justify-content-center mt-3 mt-md-0  row">
+                <div class="input col-6 col-md-4">
                   <label for="inputPassword5" class="form-label">نام</label>
                   <input type="text" id="name" class="form-control" />
                 </div>
-                <div class="input col-4">
+                <div class="input col-6 col-md-4">
                   <label for="inputPassword5" class="form-label"
                     >نام خانوادگی</label
                   >
                   <input type="text" id="name" class="form-control" />
                 </div>
-                <div class="input col-4">
+                <div class="input col-8 mt-2 md-mt-0 col-md-4">
                   <label for="inputPassword5" class="form-label"
                     >عنوان شغلی رزومه</label
                   >
@@ -121,15 +121,15 @@
               </div>
 
               <div
-                class="select-type-inputs mt-4 align-items-center justify-content-center row my-2"
+                class="select-type-inputs  mt-4 align-items-center justify-content-center row my-2"
               >
                 <div
-                  class="select-couple col-4 justify-content-around align-items-center row"
+                  class="select-couple  col-12 col-md-4 justify-content-around align-items-center row"
                 >
-                  <div class="select-group col-6">
+                  <div class="select-group  col-5">
                     <label for="inputPassword5" class="form-label">جنسیت</label>
                     <select
-                      class="form-select col-2 form-select-sm mb-3"
+                      class="form-select col-6  form-select-sm mb-3"
                       aria-label=".form-select-lg example"
                     >
                       <option selected></option>
@@ -137,10 +137,10 @@
                       <option value="female">زن</option>
                     </select>
                   </div>
-                  <div class="select-group col-6">
+                  <div class="select-group col-5 col-md-7 ">
                     <label for="inputPassword5" class="form-label"> تاهل</label>
                     <select
-                      class="form-select col-2 form-select-sm mb-3"
+                      class="form-select col-6 col-md-4 form-select-sm mb-3"
                       aria-label=".form-select-lg example"
                     >
                       <option selected></option>
@@ -151,7 +151,7 @@
                 </div>
 
                 <div
-                  class="select-couple col-4 justify-content-around align-items-center row"
+                  class="select-couple col-10 col-md-4 justify-content-around align-items-center row"
                 >
                   <div class="select-group col-12">
                     <label for="inputPassword5" class="form-label"
@@ -172,7 +172,7 @@
                 </div>
 
                 <div
-                  class="select-couple col-5 justify-content-around align-item4s-center row"
+                  class="select-couple col-md-5 justify-content-around align-item4s-center row"
                 >
                   <div class="select-group col-4">
                     <label for="inputPassword5" class="form-label"
@@ -219,7 +219,7 @@
                   <div class="select-group col-4">
                     <label for="inputPassword5" class="form-label">ماه</label>
                     <select
-                      class="form-select col-2 form-select-sm mb-3"
+                      class="form-select col-2 form-select-sm mb-3  "
                       aria-label=".form-select-lg example"
                     >
                       <option selected></option>
@@ -237,12 +237,12 @@
                       <option value="">اسفند</option>
                     </select>
                   </div>
-                  <div class="col-4 year">
+                  <div class="col-4 year  ">
                     <label for="inputPassword5" class="form-label">سال</label>
                     <input
                       type="text"
                       id="name"
-                      class="form-control px-1 w-75"
+                      class="form-control px-1 "
                     />
                   </div>
                 </div>
@@ -252,7 +252,7 @@
         </section>
 
         <!-- CONTACT INFO -->
-        <section id="contactInfo" class="row page mt-5">
+        <section id="contactInfo" class="row page ">
           <span class="text-dark col py-2 mx-0 section-title">
             اطلاعات تماس</span
           >
@@ -262,30 +262,30 @@
           >
             <!-- form inputs -->
             <div class="inputs col-12 d-flex flex-column">
-              <div class="text-type-inputs row">
-                <div class="input col-3">
+              <div class="text-type-inputs row align-items-center  ">
+                <div class="input col-12 col-md-3 ">
                   <label for="inputPassword5" class="form-label">ایمیل</label>
                   <input type="email" id="name" class="form-control" />
                 </div>
-                <div class="input col-3">
+                <div class="input col-12 col-md-3 my-3 md-my-0">
                   <label for="inputPassword5" class="form-label">موبایل</label>
                   <input type="phone" id="name" class="form-control" />
                 </div>
-                <div class="input col-3">
+                <div class="input col-12 col-md-3">
                   <label for="inputPassword5" class="form-label"> تلفن </label>
                   <input type="phone" id="name" class="form-control" />
                 </div>
-                <div class="input col-3">
+                <div class="input col-12 col-md-3 my-3 md-my-0">
                   <label for="inputPassword5" class="form-label"> وبسایت</label>
                   <input type="text" id="name" class="form-control" />
                 </div>
               </div>
 
               <div
-                class="select-type-inputs mt-4 align-items-center justify-content-between row my-2"
+                class="select-type-inputs mt-4 align-items-center justify-content-center justify-content-md-between   row my-2"
               >
                 <div
-                  class="select-couple col-4 justify-content-around align-items-center row"
+                  class="select-couple col-9 col-md-4 justify-content-around align-items-center row"
                 >
                   <div class="select-group col-6">
                     <label for="inputPassword5" class="form-label">کشور</label>
@@ -314,7 +314,7 @@
                 </div>
 
                 <div
-                  class="select-couple col-2 justify-content-around align-items-center row"
+                  class="select-couple col-5 col-md-2 justify-content-around align-items-center row"
                 >
                   <div class="select-group col-12">
                     <label for="inputPassword5" class="form-label"> شهر</label>
@@ -329,7 +329,7 @@
                   </div>
                 </div>
 
-                <div class="input col-6">
+                <div class="input col-md-6">
                   <label for="inputPassword5" class="form-label">آدرس</label>
                   <input type="text" id="name" class="form-control" />
                 </div>
@@ -339,7 +339,7 @@
         </section>
 
         <!-- leave a phone number -->
-        <section id="leaveAPhoneNumber" class="row page mt-5">
+        <section id="leaveAPhoneNumber" class="row page ">
           <span class="text-dark col py-2 mx-0 section-title">
             کاریابی (اختیاری)</span
           >
@@ -347,20 +347,20 @@
           <div
             class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row"
           >
-            <p class="col-12">
+            <p class="col-12 " >
               اگر تمایل دارید رزومه حرفه‌ای شما قابلیت سرچ و پیشنهاد کار توسط
               شرکت‌ها در وب‌سایت جاب‌استارت را داشته باشد، شماره موبایل‌تان را
               تایید کنید.
             </p>
             <div class="inputs row align-items-end">
-              <div class="input col-3">
+              <div class="input col-md-3">
                 <label for="inputPassword5" class="form-label"
                   >شماره موبایل</label
                 >
                 <input type="phone" id="name" class="form-control" />
               </div>
 
-              <div class="input col-3">
+              <div class="input mt-3  text-center  text-md-start mt-md-0 col-md-3">
                 <label for="inputPassword5" class="form-label"> </label>
                 <button class="btn btn-dark py-2 text-white">
                   دریافت کد تایید
@@ -371,7 +371,7 @@
         </section>
 
         <!-- a short text of the resume -->
-        <section id="shortTextOfResume" class="row page mt-4">
+        <section id="shortTextOfResume" class="row page ">
           <span class="text-dark col py-2 mx-0 section-title">
             خلاصه رزومه</span
           >
@@ -394,41 +394,16 @@
             </div>
           </div>
         </section>
-
-        <!-- social media -->
-        <section id="socialMedia" class="row page mt-4 mb-5">
+        <!-- social media  -->
+        <section id="socialMedia" class="row page  mb-5">
           <span class="text-dark col py-2 mx-0 section-title">
             شبکه اجتماعی</span
           >
           <!-- inputs -->
-          <div id="soialMediaBox" class="section-inputs d-none my-2 justify-content-between px-3 row ">
-            <div
-              class="col-6 row align-items-center bg-white border border-white shadow-sm"
-            >
-              <div class="select-group col-4">
-                <label for="inputPassword5" class="form-label">
-                  شبکه اجتماعی</label
-                >
-                <select
-                  class="form-select col-2 py-2 form-select-sm mb-3"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected></option>
-                  <option value="">لینکدین</option>
-                  <option value="">گیت هاب</option>
-                </select>
-              </div>
-
-              <div class="select-group col-8">
-                <label for="inputPassword5" class="form-label"
-                  >آی دی مرتبط</label
-                >
-                <input type="text" class="form-control py-1" />
-              </div>
-            </div>
+          <div  id="soialMediaBox" class="section-inputs d-none  my-2 justify-content-around align-items-center  px-3 row   ">
 
             <div
-              class="col-6 py-4 row align-items-center bg-white border border-white shadow-sm"
+              class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
               <div class="select-group col-4">
                 <label for="inputPassword5" class="form-label">
@@ -451,36 +426,38 @@
                 <input type="text" class="form-control py-1" />
               </div>
             </div>
+
+            <div
+              class="col-md-5 my-1 my-md-0  mx-0 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group py-4 col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+
           </div>
 
-          <div  class="section-inputs my-2 justify-content-between px-3 row">
-            <div
-              class="col-6 row align-items-center bg-white border border-white shadow-sm"
-            >
-              <div class="select-group col-4">
-                <label for="inputPassword5" class="form-label">
-                  شبکه اجتماعی</label
-                >
-                <select
-                  class="form-select col-2 py-2 form-select-sm mb-3"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected></option>
-                  <option value="">لینکدین</option>
-                  <option value="">گیت هاب</option>
-                </select>
-              </div>
-
-              <div class="select-group col-8">
-                <label for="inputPassword5" class="form-label"
-                  >آی دی مرتبط</label
-                >
-                <input type="text" class="form-control py-1" />
-              </div>
-            </div>
+          <div  class="section-inputs  my-2 justify-content-around align-items-center  px-3 row   ">
 
             <div
-              class="col-6 py-4 row align-items-center bg-white border border-white shadow-sm"
+              class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
               <div class="select-group col-4">
                 <label for="inputPassword5" class="form-label">
@@ -503,6 +480,32 @@
                 <input type="text" class="form-control py-1" />
               </div>
             </div>
+
+            <div
+              class="col-md-5 my-1 my-md-0  mx-0 row align-items-center bg-white border border-white shadow-sm"
+            >
+              <div class="select-group col-4">
+                <label for="inputPassword5" class="form-label">
+                  شبکه اجتماعی</label
+                >
+                <select
+                  class="form-select col-2 py-2 form-select-sm mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected></option>
+                  <option value="">لینکدین</option>
+                  <option value="">گیت هاب</option>
+                </select>
+              </div>
+
+              <div class="select-group py-4 col-8">
+                <label for="inputPassword5" class="form-label"
+                  >آی دی مرتبط</label
+                >
+                <input type="text" class="form-control py-1" />
+              </div>
+            </div>
+
           </div>
 
 

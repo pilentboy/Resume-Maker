@@ -13,6 +13,17 @@ $(document).ready(function () {
     });
     //--------------
 
+    //--------------ADDING Image
+
+   $("#selectImgBTN").change(function (e) { 
+       getImg()
+    
+   });
+
+   function getImg(){
+        const myReader = new FileReader();
+        
+   }
 });
 
 
