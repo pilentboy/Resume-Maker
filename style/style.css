@@ -12,7 +12,7 @@ body{
 
 
 .main-container{
-    width:820px;
+    width:840px;
     max-width: 95vw;
 }
 
@@ -106,3 +106,27 @@ p{
 #page1 section{
     margin-top:40px;
 }
+
+.resume-pages-list li{
+    position: relative;
+}
+.resume-pages-list li, .resume-pages-list li i{
+    transition: all 0.3s;
+}
+
+.resume-pages-list li:hover{
+    color: rgb(0, 180, 246);
+}
+
+.borderBTOrange::after{
+    position: absolute;
+    content: "";
+    bottom: -80%;
+    height:3px;
+    width: 100%;
+    background-color: #ff9f00;
+    left: 0;
+    transition: all 0.3s;
+    
+}
+
