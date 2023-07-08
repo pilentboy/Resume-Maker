@@ -1,0 +1,37 @@
+<section id="baseInfo" class="row page"></section>
+
+<span class="text-dar3k col py-2 mx-0 section-title">اطلاعات پایه</span>
+
+<div
+  class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row"
+></div>
+
+<div class="input col-6 col-md-4">
+  <label for="inputPassword5" class="form-label"></label>
+  <input type="text" id="name" class="form-control" />
+</div>
+
+<div class="select-group col-12">
+  <label for="inputPassword5" class="form-label"> </label>
+  <select
+    class="form-select col-2 form-select-sm mb-3"
+    aria-label=".form-select-lg example"
+  >
+    <option selected></option>
+    <option value="">1</option>
+  </select>
+</div>
+
+<!-- add more social media box-->
+<div
+  id="addMoreBox"
+  class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
+>
+  <span class=""> سابقه تحصیلی دیگری را اضافه کنید </span>
+  <button
+    id="addMoreSMBoxBTN"
+    class="d-flex justify-content-center border-0 position-absolute"
+  >
+    <i class="bi bi-plus text-white my-1 h2"></i>
+  </button>
+</div>

@@ -1,13 +1,24 @@
 $(document).ready(function () {
-
+    let socialMediaBox;
     //--------------ADDING A NEW SOCIAL MEDIA BOX 
     $("#addMoreSMBoxBTN").click(function (e) { 
        
-        let socialMediaBox=$("#soialMediaBox").clone();
+        socialMediaBox=$("#soialMediaBox").clone();
         
         $(socialMediaBox).removeClass("d-none");
 
         $("#addMoreBox").before(socialMediaBox);
+        
+    });
+    //--------------
+
+      //--------------ADDING A NEW  educationExperience Box
+      $("#addMoreEduExpeBTN").click(function (e) { 
+       
+        socialMediaBox=$("#eduExpInpContainer").clone();
+        
+
+        $("#addMoreEduExpe").before(socialMediaBox);
         console.log("test")
         
     });

@@ -35,16 +35,15 @@
 
   <body class="vw-100 overflow-x-hidden">
     <div class="main-container mx-auto my-5 min-vh-50">
-
       <!-- RESUME PAGES TITLES -->
       <ul
-        class="resume-pages-list justify-content-evenly  align-items-center shadow-sm list-unstyled bg-white py-3 d-flex ro2w px-3"
+        class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled bg-white py-3 d-flex ro2w px-3"
       >
-        <li class=" text-center">
+        <li class="text-center">
           اطلاعات پایه
           <i class="bi bi-caret-left-fill"></i>
         </li>
-        <li class="  text-center">
+        <li class="text-center">
           سوابق تحصیلی
 
           <i class="bi bi-caret-left-fill"></i>
@@ -53,21 +52,22 @@
           سوابق شغلی
           <i class="bi bi-caret-left-fill"></i>
         </li>
-        <li class="  text-center">
+        <li class="text-center">
           مهارت ها
           <i class="bi bi-caret-left-fill"></i>
         </li>
-        <li class="  text-center">
+        <li class="text-center">
           پروژه ها
           <i class="bi bi-caret-left-fill"></i>
         </li>
-        <li class="  text-center">
+        <li class="text-center">
           تحقیقات
           <i class="bi bi-caret-left-fill"></i>
         </li>
       </ul>
 
-      <div id="page1" class="d-flex flex-column">
+      <!-- INDEX 1 -->
+      <div id="index1" class="d-none box flex-column">
         <!-- base info-->
         <section id="baseInfo" class="row page">
           <span class="text-dar3k col py-2 mx-0 section-title"
@@ -75,7 +75,7 @@
           >
           <!-- inputs -->
           <div
-            class="section-inputs  m-0 bg-white shadow-sm border border-white py-4 px-3 row"
+            class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row"
           >
             <!-- image-->
             <div
@@ -90,7 +90,8 @@
                 <input
                   type="file"
                   id="selectImgBTN"
-                  class="bg-primary px-2 py-1 text-center"  accept="image/*"
+                  class="bg-primary px-2 py-1 text-center"
+                  accept="image/*"
                 />
                 <div
                   class="file-btn bg-primary py-1 px-3 text-center text-white"
@@ -100,8 +101,10 @@
               </div>
             </div>
             <!-- form inputs -->
-            <div class="inputs col-md-10   d-flex flex-column">
-              <div class="text-type-inputs align-items-center justify-content-center mt-3 mt-md-0  row">
+            <div class="inputs col-md-10 d-flex flex-column">
+              <div
+                class="text-type-inputs align-items-center justify-content-center mt-3 mt-md-0 row"
+              >
                 <div class="input col-6 col-md-4">
                   <label for="inputPassword5" class="form-label">نام</label>
                   <input type="text" id="name" class="form-control" />
@@ -121,15 +124,15 @@
               </div>
 
               <div
-                class="select-type-inputs  mt-4 align-items-center justify-content-center row my-2"
+                class="select-type-inputs mt-4 align-items-center justify-content-center row my-2"
               >
                 <div
-                  class="select-couple  col-12 col-md-4 justify-content-around align-items-center row"
+                  class="select-couple col-12 col-md-4 justify-content-around align-items-center row"
                 >
-                  <div class="select-group  col-5">
+                  <div class="select-group col-5">
                     <label for="inputPassword5" class="form-label">جنسیت</label>
                     <select
-                      class="form-select col-6  form-select-sm mb-3"
+                      class="form-select col-6 form-select-sm mb-3"
                       aria-label=".form-select-lg example"
                     >
                       <option selected></option>
@@ -137,7 +140,7 @@
                       <option value="female">زن</option>
                     </select>
                   </div>
-                  <div class="select-group col-5 col-md-7 ">
+                  <div class="select-group col-5 col-md-7">
                     <label for="inputPassword5" class="form-label"> تاهل</label>
                     <select
                       class="form-select col-6 col-md-4 form-select-sm mb-3"
@@ -219,7 +222,7 @@
                   <div class="select-group col-4">
                     <label for="inputPassword5" class="form-label">ماه</label>
                     <select
-                      class="form-select col-2 form-select-sm mb-3  "
+                      class="form-select col-2 form-select-sm mb-3"
                       aria-label=".form-select-lg example"
                     >
                       <option selected></option>
@@ -237,13 +240,9 @@
                       <option value="">اسفند</option>
                     </select>
                   </div>
-                  <div class="col-4 year  ">
+                  <div class="col-4 year">
                     <label for="inputPassword5" class="form-label">سال</label>
-                    <input
-                      type="text"
-                      id="name"
-                      class="form-control px-1 "
-                    />
+                    <input type="text" id="name" class="form-control px-1" />
                   </div>
                 </div>
               </div>
@@ -252,7 +251,7 @@
         </section>
 
         <!-- CONTACT INFO -->
-        <section id="contactInfo" class="row page ">
+        <section id="contactInfo" class="row page">
           <span class="text-dark col py-2 mx-0 section-title">
             اطلاعات تماس</span
           >
@@ -262,8 +261,8 @@
           >
             <!-- form inputs -->
             <div class="inputs col-12 d-flex flex-column">
-              <div class="text-type-inputs row align-items-center  ">
-                <div class="input col-12 col-md-3 ">
+              <div class="text-type-inputs row align-items-center">
+                <div class="input col-12 col-md-3">
                   <label for="inputPassword5" class="form-label">ایمیل</label>
                   <input type="email" id="name" class="form-control" />
                 </div>
@@ -282,7 +281,7 @@
               </div>
 
               <div
-                class="select-type-inputs mt-4 align-items-center justify-content-center justify-content-md-between   row my-2"
+                class="select-type-inputs mt-4 align-items-center justify-content-center justify-content-md-between row my-2"
               >
                 <div
                   class="select-couple col-9 col-md-4 justify-content-around align-items-center row"
@@ -339,7 +338,7 @@
         </section>
 
         <!-- leave a phone number -->
-        <section id="leaveAPhoneNumber" class="row page ">
+        <section id="leaveAPhoneNumber" class="row page">
           <span class="text-dark col py-2 mx-0 section-title">
             کاریابی (اختیاری)</span
           >
@@ -347,7 +346,7 @@
           <div
             class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row"
           >
-            <p class="col-12 " >
+            <p class="col-12">
               اگر تمایل دارید رزومه حرفه‌ای شما قابلیت سرچ و پیشنهاد کار توسط
               شرکت‌ها در وب‌سایت جاب‌استارت را داشته باشد، شماره موبایل‌تان را
               تایید کنید.
@@ -360,7 +359,9 @@
                 <input type="phone" id="name" class="form-control" />
               </div>
 
-              <div class="input mt-3  text-center  text-md-start mt-md-0 col-md-3">
+              <div
+                class="input mt-3 text-center text-md-start mt-md-0 col-md-3"
+              >
                 <label for="inputPassword5" class="form-label"> </label>
                 <button class="btn btn-dark py-2 text-white">
                   دریافت کد تایید
@@ -371,7 +372,7 @@
         </section>
 
         <!-- a short text of the resume -->
-        <section id="shortTextOfResume" class="row page ">
+        <section id="shortTextOfResume" class="row page">
           <span class="text-dark col py-2 mx-0 section-title">
             خلاصه رزومه</span
           >
@@ -395,13 +396,15 @@
           </div>
         </section>
         <!-- social media  -->
-        <section id="socialMedia" class="row page  mb-5">
+        <section id="socialMedia" class="row page mb-5">
           <span class="text-dark col py-2 mx-0 section-title">
             شبکه اجتماعی</span
           >
           <!-- inputs -->
-          <div  id="soialMediaBox" class="section-inputs d-none  my-2 justify-content-around align-items-center  px-3 row   ">
-
+          <div
+            id="soialMediaBox"
+            class="section-inputs d-none my-2 justify-content-around align-items-center px-3 row"
+          >
             <div
               class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
@@ -428,7 +431,7 @@
             </div>
 
             <div
-              class="col-md-5 my-1 my-md-0  mx-0 row align-items-center bg-white border border-white shadow-sm"
+              class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
               <div class="select-group col-4">
                 <label for="inputPassword5" class="form-label">
@@ -451,11 +454,11 @@
                 <input type="text" class="form-control py-1" />
               </div>
             </div>
-
           </div>
 
-          <div  class="section-inputs  my-2 justify-content-around align-items-center  px-3 row   ">
-
+          <div
+            class="section-inputs my-2 justify-content-around align-items-center px-3 row"
+          >
             <div
               class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
@@ -482,7 +485,7 @@
             </div>
 
             <div
-              class="col-md-5 my-1 my-md-0  mx-0 row align-items-center bg-white border border-white shadow-sm"
+              class="col-md-5 my-1 my-md-0 mx-0 row align-items-center bg-white border border-white shadow-sm"
             >
               <div class="select-group col-4">
                 <label for="inputPassword5" class="form-label">
@@ -505,30 +508,156 @@
                 <input type="text" class="form-control py-1" />
               </div>
             </div>
-
           </div>
-
-
-          
 
           <!-- add more social media box-->
-          <div id="addMoreBox"
+          <div
+            id="addMoreBox"
             class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
           >
             <span class=""> شبکه اجتماعی دیگری را اضافه کنید </span>
             <button
               id="addMoreSMBoxBTN"
-              class="d-flex justify-content-center border-0 position-absolute"
+              class="d-flex justify-content-center border-0 addingBoxBTN position-absolute"
             >
               <i class="bi bi-plus text-white my-1 h2"></i>
             </button>
           </div>
         </section>
-
-
       </div>
 
+      <!-- INDEX 2 -->
+      <div id="index2" class="d-flex box flex-column">
+        <section id="educationExperience" class="row page">
+          <span class="col-12 py-2 mx-0 section-title">اطلاعات تحصیلی</span>
 
+          <p class="py-2 col-12">
+            برای نوشتن سوابق تحصیلی در رزومه، همیشه از بالاترین مدرک خود شروع به
+            نوشتن کنید.
+          </p>
+
+          <div id="eduExpInpContainer"
+            class="section-inputs mx-0 my-2  bg-white shadow-sm border border-white py-4 px-3 row"
+          >
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> مقطع</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label">رشته تحصیلی</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label">گرایش/تخصص</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> نوع موسسه</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"
+                >عنوان موسسه
+              </label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> معدل</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> کشور </label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> استان </label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> شهر </label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> ورود</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="input col-6 col-md-2">
+              <label for="inputPassword5" class="form-label">
+                فراغت از تخصیل</label
+              >
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div
+              class="input align-self-end col-6 d-flex align-itesm-center justify-content-center col-md-2"
+            >
+              <input
+                class="form-check-input p-2"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              />
+              <label class="form-check-label mt-1 ms-2" for="flexCheckChecked">
+                در حال تحصیل
+              </label>
+            </div>
+          </div>
+
+          <!-- add more educationExperience box-->
+          <div
+            id="addMoreEduExpe"
+            class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
+          >
+            <span class=""> سابقه تحصیلی دیگری را اضافه کنید </span>
+            <button
+              id="addMoreEduExpeBTN"
+              class="d-flex justify-content-center border-0 addingBoxBTN position-absolute"
+            >
+              <i class="bi bi-plus text-white my-1 h2"></i>
+            </button>
+          </div>
+
+        </section>
+      </div>
     </div>
 
     <!-- JS file --->
