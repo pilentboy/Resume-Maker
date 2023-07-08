@@ -12,18 +12,35 @@ $(document).ready(function () {
     });
     //--------------
 
-      //--------------ADDING A NEW  educationExperience Box
+    //--------------ADDING A NEW  educationExperience Box
       $("#addMoreEduExpeBTN").click(function (e) { 
        
         socialMediaBox=$("#eduExpInpContainer").clone();
         
-
         $("#addMoreEduExpe").before(socialMediaBox);
-        console.log("test")
+
         
     });
     //--------------
 
+
+    //-------------- change resume box 
+
+    $(".resume-pages-list li").click(function (e) { 
+        let titleCliced=String($(this).index())
+        
+       
+        $(".box").removeClass("d-flex")
+        $(".box").addClass("d-none")
+
+        $(`.box:eq(${titleCliced})`).removeClass("d-none")
+        $(`.box:eq(${titleCliced})`).addClass("d-flex")
+
+        
+
+    });
+    //--------------
+   
     //--------------ADDING Image
 
    $("#selectImgBTN").change(function (e) { 
