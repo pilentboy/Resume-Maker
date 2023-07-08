@@ -105,17 +105,17 @@
               <div
                 class="text-type-inputs align-items-center justify-content-center mt-3 mt-md-0 row"
               >
-                <div class="input col-6 col-md-4">
+                <div class="input col-3 col-md-4">
                   <label for="inputPassword5" class="form-label">نام</label>
                   <input type="text" id="name" class="form-control" />
                 </div>
-                <div class="input col-6 col-md-4">
+                <div class="input col-3 col-md-4">
                   <label for="inputPassword5" class="form-label"
                     >نام خانوادگی</label
                   >
                   <input type="text" id="name" class="form-control" />
                 </div>
-                <div class="input col-8 mt-2 md-mt-0 col-md-4">
+                <div class="input col-5  mt-2 md-mt-0 col-md-4">
                   <label for="inputPassword5" class="form-label"
                     >عنوان شغلی رزومه</label
                   >
@@ -127,7 +127,7 @@
                 class="select-type-inputs mt-4 align-items-center justify-content-center row my-2"
               >
                 <div
-                  class="select-couple col-12 col-md-4 justify-content-around align-items-center row"
+                  class="select-couple col-7 col-md-4 justify-content-around align-items-center row"
                 >
                   <div class="select-group col-5">
                     <label for="inputPassword5" class="form-label">جنسیت</label>
@@ -154,7 +154,7 @@
                 </div>
 
                 <div
-                  class="select-couple col-10 col-md-4 justify-content-around align-items-center row"
+                  class="select-couple col-5 col-md-4 justify-content-around align-items-center row"
                 >
                   <div class="select-group col-12">
                     <label for="inputPassword5" class="form-label"
@@ -177,7 +177,7 @@
                 <div
                   class="select-couple col-md-5 justify-content-around align-item4s-center row"
                 >
-                  <div class="select-group col-4">
+                  <div class="select-group col-3 col-md-4">
                     <label for="inputPassword5" class="form-label"
                       >تاریخ تولد</label
                     >
@@ -219,7 +219,7 @@
                       <option value="">31</option>
                     </select>
                   </div>
-                  <div class="select-group col-4">
+                  <div class="select-group col-3  col-md-4">
                     <label for="inputPassword5" class="form-label">ماه</label>
                     <select
                       class="form-select col-2 form-select-sm mb-3"
@@ -240,7 +240,7 @@
                       <option value="">اسفند</option>
                     </select>
                   </div>
-                  <div class="col-4 year">
+                  <div class="col-3  col-md-4 year">
                     <label for="inputPassword5" class="form-label">سال</label>
                     <input type="text" id="name" class="form-control px-1" />
                   </div>
@@ -531,13 +531,14 @@
         <section id="educationExperience" class="row page">
           <span class="col-12 py-2 mx-0 section-title">اطلاعات تحصیلی</span>
 
-          <p class="py-2 col-12">
+          <p class="py-2 p-color col-12">
             برای نوشتن سوابق تحصیلی در رزومه، همیشه از بالاترین مدرک خود شروع به
             نوشتن کنید.
           </p>
 
-          <div id="eduExpInpContainer"
-            class="section-inputs mx-0 my-2  bg-white shadow-sm border border-white py-4 px-3 row"
+          <div
+            id="eduExpInpContainer"
+            class="section-inputs mx-0 my-2 bg-white shadow-sm border border-white py-4 px-3 row"
           >
             <div class="select-group col-6 col-md-2">
               <label for="inputPassword5" class="form-label"> مقطع</label>
@@ -655,10 +656,170 @@
               <i class="bi bi-plus text-white my-1 h2"></i>
             </button>
           </div>
-
         </section>
       </div>
 
+      <!-- INDEX 3 -->
+      <div id="index3" class="box d-none flex-column">
+        <section id="workingExperience" class="row page">
+          <span class="col-12 py-2 mx-0 section-title">سابقه کاری </span>
+
+          <p class="py-2 p-color col-12">
+            برای نوشتن سوابق شغلی ترتیب زمانی معکوس را رعایت کنید و از آخرین
+            شغلی که داشتید یا دارید، شروع به نوشتن کنید.
+          </p>
+
+          <div
+            id="workingExperienceContainer"
+            class="section-inputs mx-0 my-2 bg-white shadow-sm border border-white py-4 px-3 row"
+          >
+            <div class="input col-6 col-md-3 ">
+              <label for="inputPassword5" class="form-label"
+                >سِمت شغلی مربوطه
+              </label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="input col-6 col-md-3">
+              <label for="inputPassword5" class="form-label">عنوان محل کار</label>
+                
+              </label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="select-group col-6 mt-2 mt-md-0 col-md-2">
+              <label for="inputPassword5" class="form-label"> کشور</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="select-group col-6 mt-2 mt-md-0 col-md-2">
+              <label for="inputPassword5" class="form-label"> استان</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="select-group col-6 col-md-2">
+              <label for="inputPassword5" class="form-label"> شهر</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+
+
+            <div class="select-group col-3 col-md-2">
+              <label for="inputPassword5" class="form-label">شروع </label>
+              <select
+                class="form-select  col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+            <div class="input col-3  col-md-2">
+              <label for="inputPassword5" class="form-label">سال</label>
+                
+              </label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            <div class="select-group col-3 col-md-2">
+              <label for="inputPassword5" class="form-label"> اتمام</label>
+              <select
+                class="form-select col-2 form-select-sm mb-3 py-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected></option>
+                <option value="">1</option>
+              </select>
+            </div>
+
+
+            <div class="input col-3 col-md-2">
+              <label for="inputPassword5" class="form-label">سال</label>
+              
+              <input type="text" id="name" class="form-control" />
+            </div>
+
+            
+            <div
+              class="input align-self-end col-12 d-flex align-itesm-center justify-content-center col-md-4"
+            >
+              <input
+                class="form-check-input p-2"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              />
+              <label class="form-check-label mt-1 ms-2" for="flexCheckChecked">
+                مشغول فعالیت در این مجموعه هستم
+              </label>
+            </div>
+
+
+            <div class="input col-12 row ">
+              <span class="col-12">وظایف / دستاوردها </span>
+              <ul class="col-12 mt-2">
+                <li>
+                  در این بخش می توانید خیلی خلاصه و کوتاه، وظایف و دستاوردهای خود را به تفکیک و جداگانه لیست کنید.
+                </li>
+                <li>
+                  برای تفکیک از دکمه Enter استفاده کنید
+                </li>
+              </ul>
+
+
+              <div class="input row experice-input">
+
+                <div class="col-11">
+                  <input type="text" id="name" class="form-control " />
+                </div>
+
+                <button  class="close-input-btn  rounded border-0  col-1">
+                  <i class="bi bi-x"></i>
+                </button>
+              </div>
+              
+
+            </div>
+
+
+          </div>
+
+          <!-- add more work experience box-->
+          <div
+            id="addMoreWorkingExperince"
+            class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
+          >
+            <span class=""> سابقه شغلی دیگری را اضافه کنید
+            </span>
+            <button
+              id="addWorkingExperienceBTN"
+              class="d-flex justify-content-center border-0 addingBoxBTN position-absolute"
+            >
+              <i class="bi bi-plus text-white my-1 h2"></i>
+            </button>
+          </div>
+        </section>
+      </div>
+      
     </div>
 
     <!-- JS file --->

@@ -1,7 +1,9 @@
 body{
     background-color: #f4f5f7;
     font-family: Vazir;
+    overflow-y: scroll;
 }
+
 :root{
     --gary:#999;
 }
@@ -26,7 +28,7 @@ body{
     font-size: 0.9rem;
 }
 
-#educationExperience p{
+.p-color{
     color: #999;
     font-size: 0.9rem ;
 }

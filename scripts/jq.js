@@ -23,6 +23,18 @@ $(document).ready(function () {
     });
     //--------------
 
+    //--------------ADDING A NEW  WorkingExperience Box
+    $("#addWorkingExperienceBTN").click(function (e) { 
+       
+        socialMediaBox=$("#workingExperienceContainer").clone();
+        
+        $("#addMoreWorkingExperince").before(socialMediaBox);
+
+        
+    });
+    //--------------
+
+    
 
     //-------------- change resume box 
 
