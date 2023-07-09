@@ -78,7 +78,7 @@ body{
 }
 
 .input,.select-group,.year .form-label{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 
@@ -145,5 +145,10 @@ p{
 }
 
 .resume-pages-list li.li-color i{
+    color: #ff9f00;
+}
+
+
+.select-value-color option , .select-value-color {
     color: #ff9f00;
 }
