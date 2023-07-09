@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     let socialMediaBox;
     //--------------ADDING A NEW SOCIAL MEDIA BOX 
     $("#addMoreSMBoxBTN").click(function (e) { 
@@ -26,8 +27,7 @@ $(document).ready(function () {
     //--------------ADDING A NEW  WorkingExperience Box
     $("#addWorkingExperienceBTN").click(function (e) { 
        
-        socialMediaBox=$("#workingExperienceContainer").clone();
-        
+        socialMediaBox=$("#workingExperienceContainer").clone();      
         $("#addMoreWorkingExperince").before(socialMediaBox);
 
         
@@ -42,9 +42,7 @@ $(document).ready(function () {
         let titleCliced=String($(this).index())
 
         $(".resume-pages-list li").removeClass("li-color")
-        // $(".resume-pages-list li").removeClass("borderBTOrange")
         $(this).addClass("li-color");
-        // $(this).addClass("borderBTOrange");
 
        
         $(".box").removeClass("d-flex")
@@ -57,6 +55,19 @@ $(document).ready(function () {
 
     });
     //--------------
+
+
+    /*-----add more achievement box*/
+    $(".achiv-input").keydown(function (e) { 
+        if(e.which == 13){
+            let expInpCont=$(".experice-input:eq('0')").clone();
+           
+            $(".achievement-box").append(expInpCont);
+         
+        }
+     
+    });
+
    
     //--------------ADDING Image
 

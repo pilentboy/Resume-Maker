@@ -34,12 +34,13 @@
   </head>
 
   <body class="vw-100 overflow-x-hidden">
-    <div class="main-container mx-auto my-5 min-vh-50">
+    
+    <div class="main-container  mx-auto my-5 min-vh-50">
       <!-- RESUME PAGES TITLES -->
       <ul
-        class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled bg-white py-3 d-flex ro2w px-3"
+        class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled bg-white py-3 d-flex  px-3"
       >
-        <li class="text-center">
+        <li class="text-center li-color">
           اطلاعات پایه
           <i class="bi bi-caret-left-fill"></i>
         </li>
@@ -67,9 +68,9 @@
       </ul>
 
       <!-- INDEX 1 -->
-      <div id="index1" class="d-flex box flex-column">
+      <div id="index1" class="d-flex box flex-column test  ">
         <!-- base info-->
-        <section id="baseInfo" class="row page">
+        <section id="baseInfo" class="row page  ">
           <span class="text-dar3k col py-2 mx-0 section-title"
             >اطلاعات پایه</span
           >
@@ -775,7 +776,7 @@
             </div>
 
 
-            <div class="input col-12 row ">
+            <div class="input col-12 row achievement-box ">
               <span class="col-12">وظایف / دستاوردها </span>
               <ul class="col-12 mt-2">
                 <li>
@@ -787,9 +788,9 @@
               </ul>
 
 
-              <div class="input row experice-input">
+              <div  class="input row mt-3 experice-input">
 
-                <div class="col-11">
+                <div class="col-11 achiv-input ">
                   <input type="text" id="name" class="form-control " />
                 </div>
 
@@ -1184,7 +1185,7 @@
       </div>
 
         <!-- INDEX 5 -->
-        <div id="index4" class="box d-none flex-column">
+        <div id="index5" class="box d-none flex-column">
 
           <section id="CertificateSkill" class="row page mb-5">
 
@@ -1275,6 +1276,101 @@
           </section>
 
         </div>
+
+        <!-- INDEX6 -->
+        <div id="index6" class="box d-none flex-column">
+
+          <section id="CertificateSkill" class="row page mb-5">
+
+            <span class="text-dark col py-2 mx-0 section-title">
+               تحقیقات</span
+            >
+
+
+         <div
+            class="section-inputs my-2 justify-content-around align-items-center px-3 row"
+          >
+
+          <div
+          class="section-inputs m-0 bg-white shadow-sm border border-white py-4 px-3 row">
+
+        <div class="input col-8">
+          <label for="inputPassword5" class="form-label">عنوان</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+
+        <div class="input col-4">
+          <label for="inputPassword5" class="form-label">کارفرما/درخواست کننده</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+        <div class="input col-12 col-md-3 mt-2">
+          <label for="inputPassword5" class="form-label">ناشر </label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+        <div class="input col-12 col-md-5 mt-2">
+          <label for="inputPassword5" class="form-label">لینک مرتبط</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+
+
+        <div class="input col-6 col-md-2 mt-2">
+
+          <label for="inputPassword5" class="form-label"> تاریخ</label>
+          <select
+            class="form-select col-2 form-select-sm mb-3"
+            aria-label=".form-select-lg example"
+          >
+            <option selected></option>
+            <option value="">1</option>
+          </select>
+        </div>
+        
+
+        <div class="input col-6 col-md-2 mt-2">
+          <label for="inputPassword5" class="form-label">سال</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+  
+        <div class="input col-12 mt-2 mt-md-0">
+          <label for="inputPassword5" class="form-label">توضیحات </label>
+            <textarea
+            class="form-control"
+            id="textAreaExample1"
+            rows="3"
+          ></textarea>
+
+        </div>
+
+      </div>
+   
+           
+          </div>
+
+          <!-- add more research -->
+            <div
+              id="researchAdding"
+              class="add-more col-12 d-flex align-items-center justify-content-center position-relative py-4 shadow-sm px-1 my-2 bg-white"
+            >
+              <span class="">
+                تحقیق و مقاله دیگری را اضافه کنید
+              </span>
+              <button
+                id="researchAddingBTN"
+                class="d-flex justify-content-center border-0 addingBoxBTN position-absolute"
+              >
+                <i class="bi bi-plus text-white my-1 h2"></i>
+              </button>
+            </div>
+
+          </section>
+
+        </div>
+        
         
       
     </div>
