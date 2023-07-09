@@ -129,7 +129,11 @@ p{
     color: rgb(0, 180, 246);
 }
 
-.borderBTOrange::after{
+.li-color{
+    color: rgb(0, 180, 246) !important;
+}
+
+.resume-pages-list li.li-color::after {
     position: absolute;
     content: "";
     bottom: -80%;
@@ -138,6 +142,8 @@ p{
     background-color: #ff9f00;
     left: 0;
     transition: all 0.3s;
-    
 }
 
+.resume-pages-list li.li-color i{
+    color: #ff9f00;
+}

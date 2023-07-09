@@ -40,7 +40,12 @@ $(document).ready(function () {
 
     $(".resume-pages-list li").click(function (e) { 
         let titleCliced=String($(this).index())
-        
+
+        $(".resume-pages-list li").removeClass("li-color")
+        // $(".resume-pages-list li").removeClass("borderBTOrange")
+        $(this).addClass("li-color");
+        // $(this).addClass("borderBTOrange");
+
        
         $(".box").removeClass("d-flex")
         $(".box").addClass("d-none")
