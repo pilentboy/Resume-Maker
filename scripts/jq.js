@@ -156,6 +156,24 @@ $(document).ready(function () {
    
     //--------------ADDING Image
 
+
+
+    // ul links
+
+  
+    $(window).scroll(function () { 
+        var offsetTop = $(window).scrollTop();
+       
+        if (offsetTop >= 60){
+            $(".resume-pages-list").addClass("position-sticky top-0 index-top")
+        }else{
+            $(".resume-pages-list").removeClass("position-sticky top-0 index-top")
+        }
+ 
+    });
+
+    
+    
 });
 
 
