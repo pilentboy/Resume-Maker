@@ -1,5 +1,14 @@
 $(document).ready(function () {
     
+
+
+
+
+
+
+
+
+    // FUNCTIONS FOR THE BTNS ARE FOR MAKING A COPY OF THEIR ABOVE INPUTS
     //--------------ADDING A NEW SOCIAL MEDIA BOX 
     $("#socialParentBTN").click(function (e) { 
        
@@ -96,6 +105,7 @@ $(document).ready(function () {
     });
     //--------------
 
+    // END
 
     //-------------- change resume box 
 
@@ -120,6 +130,7 @@ $(document).ready(function () {
 
     /*-----add more achievement box*/
     $(".achiv-input").keydown(function (e) { 
+
         if(e.which == 13){
             let expInpCont=$(".experice-input:eq('0')").clone();
            
@@ -128,6 +139,19 @@ $(document).ready(function () {
         }
      
     });
+
+
+    
+
+    $(".achiv-input").click(function (e) {
+        if(e.which == 13){            
+            let expInpCont=$(".experice-input:eq('0')").clone();
+            
+       
+            $(".achievement-box").append(expInpCont);
+         
+        }
+      })
 
    
     //--------------ADDING Image
