@@ -1,40 +1,101 @@
 $(document).ready(function () {
     
-    let socialMediaBox;
     //--------------ADDING A NEW SOCIAL MEDIA BOX 
-    $("#addMoreSMBoxBTN").click(function (e) { 
+    $("#socialParentBTN").click(function (e) { 
        
-        socialMediaBox=$("#soialMediaBox").clone();
-        
-        $(socialMediaBox).removeClass("d-none");
+        let socialMediaBox=$("#soialMediaCouple").clone();
 
-        $("#addMoreBox").before(socialMediaBox);
+        $("#addingSocialParent").before(socialMediaBox);
         
     });
     //--------------
 
-    //--------------ADDING A NEW  educationExperience Box
-      $("#addMoreEduExpeBTN").click(function (e) { 
-       
-        socialMediaBox=$("#eduExpInpContainer").clone();
-        
-        $("#addMoreEduExpe").before(socialMediaBox);
 
-        
-    });
+    //--------------ADDING A NEW EduExperience
+        $("#addingEduExpParentBTN").click(function (e) { 
+       
+            let eduExperienceBox=$("#eduExperience").clone();
+    
+            $("#addingEduExpParent").before(eduExperienceBox);
+            
+        });
+    //--------------
+    
+    //--------------ADDING A NEW workingExperience
+        $("#addinWoExpBTN").click(function (e) { 
+       
+            let workingExperienceBox=$("#workingExperience").clone();
+    
+            $("#addinWoExp").before(workingExperienceBox);
+            
+        });
+    //--------------
+    
+
+    //--------------ADDING A NEW workingExperience
+        $("#LanSkillParentBTN").click(function (e) { 
+       
+            let workingExperienceBox=$("#userLanguageSkill").clone();
+    
+            $("#LanSkillParent").before(workingExperienceBox);
+            
+        });
     //--------------
 
-    //--------------ADDING A NEW  WorkingExperience Box
-    $("#addWorkingExperienceBTN").click(function (e) { 
+    
+    //--------------ADDING A NEW workingExperience
+    $("#addingLanSkillBTN").click(function (e) { 
        
-        socialMediaBox=$("#workingExperienceContainer").clone();      
-        $("#addMoreWorkingExperince").before(socialMediaBox);
+        let workingExperienceBox=$("#userLanguageSkill").clone();
 
+        $("#addingLanSkill").before(workingExperienceBox);
         
     });
     //--------------
 
     
+    //--------------ADDING A NEW Experimentalskill
+       $("#addingExpeskillBTN").click(function (e) { 
+       
+        let workingExperienceBox=$("#Experimentalskill").clone();
+
+        $("#addingExpeskill").before(workingExperienceBox);
+        
+    });
+    //--------------
+
+
+    //--------------ADDING A NEW CertificateSkill
+    $("#addingCertSkillBTN").click(function (e) { 
+       
+        let workingExperienceBox=$("#CertificateSkill").clone();
+
+        $("#addingCertSkill").before(workingExperienceBox);
+        
+    });
+    //--------------
+
+    
+    //--------------ADDING A NEW Project Box
+    $("#addingProjectBTN").click(function (e) { 
+       
+        let workingExperienceBox=$("#CertificateSkill").clone();
+
+        $("#addingProject").before(workingExperienceBox);
+        
+    });
+    //--------------
+
+    //--------------ADDING A NEW Reseach
+    $("#addingResearchBTN").click(function (e) { 
+       
+        let workingExperienceBox=$("#Research").clone();
+
+        $("#addingResearch").before(workingExperienceBox);
+        
+    });
+    //--------------
+
 
     //-------------- change resume box 
 
@@ -71,15 +132,6 @@ $(document).ready(function () {
    
     //--------------ADDING Image
 
-   $("#selectImgBTN").change(function (e) { 
-       getImg()
-    
-   });
-
-   function getImg(){
-        const myReader = new FileReader();
-        
-   }
 });
 
 
