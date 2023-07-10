@@ -161,3 +161,11 @@ p{
     z-index: 999;
    
 }
+
+.output-options{
+    top: 80%;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    max-height: 100px;
+}
