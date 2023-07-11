@@ -245,3 +245,34 @@ p{
     background-color: orange;
     box-shadow: 0 3px 0px 0px rgb(198, 137, 52);
 }
+
+.comment-box{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}
+
+.star-box{
+    width: 300px;
+    min-height: 150px;
+    border: 1px solid white;
+}
+.stars-row i{
+    color: #ff9f00;
+    font-size: 1.1rem;
+}
+
+.br-gray{
+    border-color: gray !important;
+}
+
+#closeStarBoxBTN{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    top: -18%;
+    left: -8%;
+    font-size: 1.5rem;
+}
