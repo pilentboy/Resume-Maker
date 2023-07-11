@@ -178,3 +178,31 @@ p{
         top: 90%;
     }
 }
+.nav-link{
+    transition: all 0.3s;
+}
+.nav-link:hover{
+    color: blue !important;
+}
+.dropdown-menu li a:hover{
+    background-color: transparent;
+    color: blue;
+}
+.dropdown-menu li a{
+    font-size: .875rem  !important;
+}
+
+#userPannelLink:hover i {
+    color: white !important;
+}
+
+#userPannelLink i{
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+
+.resume-pages-list{
+    position: sticky;
+    top: 0;
+}

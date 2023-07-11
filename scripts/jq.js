@@ -1,17 +1,10 @@
 $(document).ready(function () {
     
 
-
-
-
-
-
-
-
     // FUNCTIONS FOR THE BTNS ARE FOR MAKING A COPY OF THEIR ABOVE INPUTS
     //--------------ADDING A NEW SOCIAL MEDIA BOX 
     $("#socialParentBTN").click(function (e) { 
-       
+      
         let socialMediaBox=$("#soialMediaCouple").clone();
 
         $("#addingSocialParent").before(socialMediaBox);
@@ -22,7 +15,7 @@ $(document).ready(function () {
 
     //--------------ADDING A NEW EduExperience
         $("#addingEduExpParentBTN").click(function (e) { 
-       
+            e.preventDefault();
             let eduExperienceBox=$("#eduExperience").clone();
     
             $("#addingEduExpParent").before(eduExperienceBox);
@@ -159,20 +152,26 @@ $(document).ready(function () {
 
 
     // ul links
-
-  
-    $(window).scroll(function () { 
-        var offsetTop = $(window).scrollTop();
+    // add position sticky to form ul
+    // $(window).scroll(function () { 
+    //     var offsetTop = $(window).scrollTop();
        
-        if (offsetTop >= 60){
-            $(".resume-pages-list").addClass("position-sticky top-0 index-top")
-        }else{
-            $(".resume-pages-list").removeClass("position-sticky top-0 index-top")
-        }
+    //     if (offsetTop >= 60){
+    //         $(".resume-pages-list").addClass("position-sticky top-0 index-top")
+    //     }else{
+    //         $(".resume-pages-list").removeClass("position-sticky top-0 index-top")
+    //     }
  
+    // });
+
+    // end
+
+
+    $("#formInputsForm").submit(function (e) { 
+        e.preventDefault();
     });
 
-    
+
     
 });
 
