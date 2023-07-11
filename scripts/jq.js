@@ -184,7 +184,6 @@ $(document).ready(function () {
 
     $("body").on("click",{value:"mahdi",id:"myid"},function(e){
         let targetID=$(e.target).attr("id");
-        console.log(targetID)
         if(targetID == "comment-box" || targetID == "closeStarBox"  ){
             $("body").removeClass("overflow-y-hidden");
             $("#comment-box").removeClass("d-flex");
@@ -194,6 +193,21 @@ $(document).ready(function () {
     })
     /* end */
 
+    /* star-row hover */
+    $(".stars-row i").hover(function (e) {
+        let iHoverIndex=$(e.target).index()
+        console.log(iHoverIndex)
+
+        for(i=0; i <= iHoverIndex; i++){
+            $(`.stars-row i:eq(${String(i)})`).removeClass("bi-star")
+            $(`.stars-row i:eq(${String(i)})`).addClass("bi-star-fill")
+
+        }
+    }, function (e) {
+            $(".stars-row i").removeClass("bi-star-fill")
+            $(".stars-row i").addClass("bi-star");
+        }
+    );
 
 });
 
