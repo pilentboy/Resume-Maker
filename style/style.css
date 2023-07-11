@@ -246,19 +246,36 @@ p{
     box-shadow: 0 3px 0px 0px rgb(198, 137, 52);
 }
 
-.comment-box{
+#comment-box{
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 200;
+    background-color: rgba(128, 128, 128, 0.449);
 }
 
 .star-box{
-    width: 300px;
+    width: 260px;
     min-height: 150px;
     border: 1px solid white;
+    animation-name: starboxanime;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    
 }
+
+@keyframes starboxanime{
+    0%{
+        transform: translateY(-10%);
+    }
+
+    100%{
+        transform: translateY(0%);
+
+    }
+}
+
 .stars-row i{
     color: #ff9f00;
     font-size: 1.1rem;

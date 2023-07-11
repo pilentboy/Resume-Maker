@@ -174,6 +174,27 @@ $(document).ready(function () {
   
 
     
+    /* display star box*/
+    $("#leaveingCommentBTN").click(function (e) { 
+        $("body").addClass("overflow-y-hidden");
+        $("#comment-box").removeClass("d-none");
+        $("#comment-box").addClass("d-flex");
+
+    });
+
+    $("body").on("click",{value:"mahdi",id:"myid"},function(e){
+        let targetID=$(e.target).attr("id");
+        console.log(targetID)
+        if(targetID == "comment-box" || targetID == "closeStarBox"  ){
+            $("body").removeClass("overflow-y-hidden");
+            $("#comment-box").removeClass("d-flex");
+            $("#comment-box").addClass("d-none");
+         
+        }
+    })
+    /* end */
+
+
 });
 
 

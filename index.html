@@ -63,12 +63,14 @@
     </div>
 
     <!-- give star to resume box-->
-    <div class="comment-box position-absolute d-flex align-items-center justify-content-center bg-danger">
+    <div id="comment-box" class="position-absolute d-none align-items-center justify-content-center ">
 
-        <div class="star-box position-relative text-center row align-items-center justify-content-center  ">
-          <button id="closeStarBoxBTN" class="border-0  text-primary position-absolute">
-            <i class="bi bi-close">x</i>
+        <div class="star-box bg-white position-relative text-center row align-items-center justify-content-center  ">
+
+          <button id="closeStarBoxBTN" class="border-0 p-2  d-flex align-items-center justify-content-center  text-white position-absolute">
+            <i class="bi bi-x-lg" id="closeStarBox"></i>
           </button>
+
           <span id="star-title col-12">
             به رزومه ساز چه امتیازی می دهید؟
           </span>
