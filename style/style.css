@@ -240,3 +240,8 @@ p{
     color: var(--green);
     font-size: 1.3rem;
 }
+
+#leaveingCommentBTN{
+    background-color: orange;
+    box-shadow: 0 3px 0px 0px rgb(198, 137, 52);
+}
