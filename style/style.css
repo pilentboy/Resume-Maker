@@ -27,6 +27,9 @@ body{
     color: #999;
     font-size: 0.9rem;
 }
+.add-more{
+    z-index: 100;
+}
 
 .p-color{
     color: #999;
@@ -43,7 +46,7 @@ body{
 
 
 
-/* height for each boxes */
+/* height for each boxe */
 .page{
     min-height: 230px ;
 }
@@ -168,4 +171,10 @@ p{
     bottom: 0;
     width: 100vw;
     max-height: 100px;
+}
+
+@media only screen and (max-width:576px){
+    .output-options{
+        top: 90%;
+    }
 }
