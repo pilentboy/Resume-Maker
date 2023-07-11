@@ -6,6 +6,7 @@ body{
 
 :root{
     --gary:#999;
+    --green:#1bc01b
 }
 @font-face{
     font-family: "Vazir";
@@ -180,6 +181,7 @@ p{
 }
 .nav-link{
     transition: all 0.3s;
+    font-size: 0.9rem;
 }
 .nav-link:hover{
     color: blue !important;
@@ -189,7 +191,7 @@ p{
     color: blue;
 }
 .dropdown-menu li a{
-    font-size: .875rem  !important;
+    font-size: .875rem !important;
 }
 
 #userPannelLink:hover i {
@@ -205,4 +207,36 @@ p{
 .resume-pages-list{
     position: sticky;
     top: 0;
+}
+
+.top-btns{
+    top:17%;
+}
+
+.resume-progress-circle{
+    width: 220px;
+    height: 180px;
+}
+
+.progress-circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    
+}
+
+.inside-circle{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border-width: 5px !important;
+}
+
+.resume-progress-circle .text span{
+    font-size: 0.8rem;
+}
+
+.resume-progress-circle .text span:first-child,#use-resume-progress{
+    color: var(--green);
+    font-size: 1.3rem;
 }
