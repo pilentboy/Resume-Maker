@@ -249,6 +249,33 @@ $(document).ready(function () {
 
 
 
+    // control the resume progress
+    let progress=0;
+    let selectedInput;
+    $("input,select,textarea").change(function () { 
+        if($(this).val() != undefined){
+            selectedInput=$(this).attr("used");
+    
+            if(selectedInput == undefined){
+                progress+=2;
+                $(this).attr("used", "true");
+                $("#user-resume-progress").html("%" + progress )
+            }
+           
+        }
+       
+    });
+
+    // decreasing progress if any cliced input changed to ""
+    $("input,select,textarea").change(function(){
+        selectedInput=$(this).attr("used")
+        if(selectedInput != undefined && $(this).val() == ""){
+            $(this).removeAttr("used");
+            progress-=2;
+            $("#user-resume-progress").html("%" + progress )
+        }
+    })
+
 });
 
 

@@ -269,7 +269,7 @@ p{
     font-size: 0.8rem;
 }
 
-.resume-progress-circle .text span:first-child,#use-resume-progress{
+.resume-progress-circle .text span:first-child,#user-resume-progress{
     color: var(--green);
     font-size: 1.3rem;
 }
