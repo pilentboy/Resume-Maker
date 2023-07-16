@@ -212,14 +212,24 @@ $(document).ready(function () {
     // checking the star index clicked by user
     $(".stars-row i").click(function(){
         let liClickedIndex=$(this).index()
-        
+
         let iLength=$(".stars-row i").length / 2 -1
+        $(".indicators").removeClass("d-none")
+        $(".indicators").addClass("d-flex")
         if(liClickedIndex <= 1){
-            console.log("bad")
+            $(".indicators-title").html("نقاط ضعف رزومه ساز چیست؟")
+            $(".indicators-title").removeClass("text-green")
+            $(".indicators-title").addClass("text-danger")
+            
         }else if (liClickedIndex == iLength.toFixed(0)) {
-            console.log("not bad")
+            $(".indicators-title").html("")
+            $(".indicators").removeClass("d-flex")
+            $(".indicators").addClass("d-none")
+
         } else {    
-            console.log("great")
+            $(".indicators-title").html("نقاط قوت رزومه ساز چیست؟")
+            $(".indicators-title").removeClass("text-danger")
+            $(".indicators-title").addClass("text-success")
         }   
     })
 
