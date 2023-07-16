@@ -147,9 +147,26 @@ $(document).ready(function () {
       })
 
    
-    //--------------ADDING Image
+    //-------------- ADDING Image
 
+    $("#selectImgBTN").change(function(){
+        if (typeof (FileReader) != "undefined") {
 
+            var reader = new FileReader();
+            $(".user-img i").remove()
+            $(".user-img img").remove()
+            reader.onload = function (e) {
+
+                $("<img />", {
+                    "src": e.target.result
+                }).appendTo($(".user-img"));
+
+            }
+            // $(".user-img").append()
+            reader.readAsDataURL($(this)[0].files[0]);
+        } 
+    })
+    //-------------- END ADDING IMAGE 
 
     // ul links
     // add position sticky to form ul
