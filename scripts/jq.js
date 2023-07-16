@@ -213,9 +213,22 @@ $(document).ready(function () {
     $(".stars-row i").click(function(){
         let liClickedIndex=$(this).index()
 
+        // adding/removing bi-star-fill based on the i index cliced
+        $(".stars-row i").removeClass("bi-star-fill")
+        $(".stars-row i").addClass("bi-star")
+        $(".stars-row i").unbind('mouseleave mouseenter')
+        
+        for(i=0; i <= liClickedIndex; i++){
+            $(`.stars-row i:eq(${i})`).removeClass("bi-star")
+            $(`.stars-row i:eq(${i})`).addClass("bi-star-fill")
+        }
+
+        // end adding/remove bi-star-fill 
+
         let iLength=$(".stars-row i").length / 2 -1
         $(".indicators").removeClass("d-none")
         $(".indicators").addClass("d-flex")
+
         if(liClickedIndex <= 1){
             $(".indicators-title").html("نقاط ضعف رزومه ساز چیست؟")
             $(".indicators-title").removeClass("text-green")
@@ -232,6 +245,7 @@ $(document).ready(function () {
             $(".indicators-title").addClass("text-success")
         }   
     })
+
 
 
 
