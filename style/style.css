@@ -16,8 +16,7 @@ body{
 
 .main-container{
     width:840px;
-    max-width: 840px;
-    max-width: 95vw;
+    max-width: 95vw
 }
 
 .input,.select-group,.year label{
@@ -42,12 +41,16 @@ body{
     color: var(--gary);
     font-size: 0.9rem;
     font-weight: 500;
+
+}
+.resume-pages-list{
+	z-index:200;
+	
 }
 
 
 
-
-/* height for each boxe */
+/* height for each section */
 .page{
     min-height: 230px ;
 }
@@ -111,7 +114,11 @@ select option{
     width: 40px;
     height: 40px;
     transform: translateX(-50%);
+    z-index:500 !important; 
+   
 }
+
+
 p{
     text-align: justify !important;
 }
@@ -128,6 +135,7 @@ p{
 .resume-pages-list li{
     position: relative;
 }
+
 .resume-pages-list li, .resume-pages-list li i{
     transition: all 0.3s;
 }
@@ -172,6 +180,7 @@ p{
     bottom: 0;
     width: 100vw;
     max-height: 100px;
+    z-index: 50;
 }
 
 @media only screen and (max-width:576px){
@@ -179,6 +188,7 @@ p{
         top: 90%;
     }
 }
+
 .nav-link{
     transition: all 0.3s;
     font-size: 0.9rem;
@@ -207,6 +217,29 @@ p{
 .resume-pages-list{
     position: sticky;
     top: 0;
+}
+
+/* Responsive rsume pages list*/
+
+@media only screen and (max-width:576px)  {
+    .resume-pages-list{
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow-x: auto !important
+    }
+
+    .resume-pages-list li.li-color::after {
+        display: none !important;
+    }
+
+    .resume-pages-list li{
+       
+    } 
+
+    .resume-pages-list li .bi-caret-left-fill{
+        display: none;
+    }
 }
 
 .top-btns{
@@ -251,8 +284,8 @@ p{
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 200;
-    background-color: rgba(128, 128, 128, 0.449);
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .star-box{
@@ -289,7 +322,17 @@ p{
     width: 20px;
     height: 20px;
     background-color: transparent;
-    top: -18%;
+    top: -15%;
     left: -8%;
     font-size: 1.5rem;
+}
+
+
+
+.indicators-title{
+    font-size: 14px;
+}
+
+.indicators label{
+    font-size: 12px;
 }

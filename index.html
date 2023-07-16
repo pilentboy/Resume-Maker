@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
-  <body class="vw-100 overflow-x-hidden ">
+  <body class="vw-100  overflow-x-hidden ">
     
     <div class="top-btns position-absolute vw-100  d-none d-xl-flex justify-content-between ">
 
@@ -63,18 +63,19 @@
     </div>
 
     <!-- give star to resume box-->
-    <div id="comment-box" class="position-absolute d-none align-items-center justify-content-center ">
+    <div id="comment-box" class="position-absolute  d-none align-items-center justify-content-center ">
 
-        <div class="star-box bg-white position-relative text-center row align-items-center justify-content-center  ">
+      <form action="#">
+        <div class="star-box bg-white py-0  position-relative text-center row align-items-center justify-content-center  ">
 
-          <button id="closeStarBoxBTN" class="border-0 p-2  d-flex align-items-center justify-content-center  text-white position-absolute">
+          <button id="closeStarBoxBTN" class="border-0  d-flex align-items-center justify-content-center  text-white position-absolute">
             <i class="bi bi-x-lg" id="closeStarBox"></i>
           </button>
 
-          <span id="star-title col-12">
+          <span id="star-title" class="pt-2 col-12">
             به رزومه ساز چه امتیازی می دهید؟
           </span>
-          <div class="stars-row col-6 d-flex align-items-center justify-content-between">
+          <div class="stars-row col-6 py-3 d-flex align-items-center justify-content-between">
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
@@ -82,12 +83,65 @@
             <i class="bi bi-star"></i>
           </div>
 
+
+
+          <div class="indicators d-none flex-column align-items-center my-">
+            <span class="indicators-title py-2">
+              نقات ضعف رزومه ساز چیست؟
+            </span>
+
+            <div class="item py-1">
+              <input
+              class="form-check-input p-2"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label " for="flexCheckChecked">
+                در حال تحصیل
+            </label>
+
+            </div>
+
+            <div class="item py-1">
+              <input
+              class="form-check-input p-2"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+                در حال تحصیل
+            </label>
+
+            </div>
+
+            <div class="item py-1">
+              <input
+              class="form-check-input p-2"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+                در حال تحصیل
+            </label>
+
+            </div>
+
+         
+
+          </div>
+
+
           <div class="br-gray col-8 border border-1"></div>
 
-          <button id="send-stars-btn" class="btn btn-primary btn-sm w-50">
+          <button id="send-stars-btn" class="btn btn-primary btn-sm my-2 w-50 ">
             ارسال نظر
           </button>
+
         </div>
+      </form>
 
     </div>
 
@@ -176,9 +230,9 @@
     <div class="main-container   mx-auto my-5 min-vh-50">
       <!-- RESUME PAGES TITLES -->
       <ul
-        class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled bg-white py-3 d-flex  px-3"
+        class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled  bg-white py-3 d-flex  px-3"
       >
-        <li class="text-center li-color">
+        <li class="text-center li-color  ">
           اطلاعات پایه
           <i class="bi bi-caret-left-fill"></i>
         </li>

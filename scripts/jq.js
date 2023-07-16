@@ -196,7 +196,7 @@ $(document).ready(function () {
     /* star-row hover */
     $(".stars-row i").hover(function (e) {
         let iHoverIndex=$(e.target).index()
-        console.log(iHoverIndex)
+    
 
         for(i=0; i <= iHoverIndex; i++){
             $(`.stars-row i:eq(${String(i)})`).removeClass("bi-star")
@@ -209,6 +209,25 @@ $(document).ready(function () {
         }
     );
 
+    // checking the star index clicked by user
+    $(".stars-row i").click(function(){
+        let liClickedIndex=$(this).index()
+        
+        let iLength=$(".stars-row i").length / 2 -1
+        if(liClickedIndex <= 1){
+            console.log("bad")
+        }else if (liClickedIndex == iLength.toFixed(0)) {
+            console.log("not bad")
+        } else {    
+            console.log("great")
+        }   
+    })
+
+
+
 });
+
+
+
 
 
