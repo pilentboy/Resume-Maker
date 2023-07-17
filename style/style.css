@@ -269,6 +269,7 @@ p{
     height: 85%;
     border-radius: 50%;
     border-width: 5px !important;
+    border-color: rgba(162, 158, 158, 0.764) !important;
 }
 
 .resume-progress-circle .text span{

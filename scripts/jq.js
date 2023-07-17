@@ -162,9 +162,9 @@ $(document).ready(function () {
                 }).appendTo($(".user-img"));
 
             }
-            // $(".user-img").append()
+            
             reader.readAsDataURL($(this)[0].files[0]);
-        } 
+        }
     })
     //-------------- END ADDING IMAGE 
 
@@ -270,6 +270,7 @@ $(document).ready(function () {
     let progress=0;
     let selectedInput;
     $("input,select,textarea").change(function () { 
+        console.log("dqdqd")
         if($(this).val() != undefined){
             selectedInput=$(this).attr("used");
     
