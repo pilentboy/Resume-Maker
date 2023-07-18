@@ -294,6 +294,28 @@ $(document).ready(function () {
         }
     })
 
+
+
+    /* download resume*/
+
+    
+    $("#resumeResult").hide(0)
+    
+
+    $("#downloadResumeBTN").click(function(){
+        $("body").addClass("overflow-y-hidden");
+        $("#resumeResult").show(500)
+    })
+
+
+    $(document).on("click", function (e) {
+    
+        if($(e.target).attr("id") == "resumeResult"){
+            $("body").removeClass("overflow-y-hidden");
+            $("#resumeResult").hide(500)
+        }
+    });
+
 });
 
 
