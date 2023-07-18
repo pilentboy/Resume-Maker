@@ -35,199 +35,216 @@
   </head>
 
   <body class="vw-100  overflow-x-hidden ">
-    
-    <div class="top-btns position-absolute vw-100  d-none d-xl-flex justify-content-between ">
 
-      <div class="resume-progress-circle d-flex flex-column  text-center  ms-4 bg-prim2ary justify-content-around align-items-center ">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white px-2 px-md-5">
 
-        <div class="text">
-          <span class=" mt-1  d-block  ">رزومه ساز آنلاین</span>
-          <span class="text-secondary my-1 d-block ">ساخت رزومه در 10 دقیقه</span>
-        </div>
-      
-        <div class="progress-circle mt-2 bg-white d-flex align-items-center justify-content-center">
-            <div class="inside-circle border   align-items-center justify-content-center h5  my-auto  d-flex">
-              <span id="user-resume-progress" class=" ">
-                %0 
-              </span>
-            </div>
-
-        </div>
-      </div>
-
-      <button id="leaveingCommentBTN" class="btn btn-danger h-50 pb-2 me-3  text-white border-0 ">
-        نظر دهید
-      </button>
-
-    
-    </div>
-
-    <!-- give star to resume box-->
-    <div id="comment-box" class="position-absolute  d-none align-items-center justify-content-center ">
-
-      <form action="#">
-        <div class="star-box bg-white py-0  position-relative text-center row align-items-center justify-content-center  ">
-
-          <button id="closeStarBoxBTN" class="border-0  d-flex align-items-center justify-content-center  text-white position-absolute">
-            <i class="bi bi-x-lg" id="closeStarBox"></i>
-          </button>
-
-          <span id="star-title" class="pt-2 col-12">
-            به رزومه ساز چه امتیازی می دهید؟
-          </span>
-          <div class="stars-row col-6 py-3 d-flex align-items-center justify-content-between">
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-          </div>
-
-
-
-          <div class="indicators d-none flex-column align-items-center my-">
-            <span class="indicators-title py-2 fw-bold ">
-              نقات ضعف رزومه ساز چیست؟
-            </span>
-
-            <div class="item py-1">
-              <input
-              class="form-check-input p-2"
-              type="checkbox"
-              value=""
-              id="flexCheckChecked"
-            />
-            <label class="form-check-label " for="flexCheckChecked">
-               سهولت استفاده
-            </label>
-
-            </div>
-
-            <div class="item py-1">
-              <input
-              class="form-check-input p-2"
-              type="checkbox"
-              value=""
-              id="flexCheckChecked"
-            />
-            <label class="form-check-label" for="flexCheckChecked">
-              سرعت و عملکرد
-            </label>
-
-            </div>
-
-            <div class="item py-1">
-              <input
-              class="form-check-input p-2"
-              type="checkbox"
-              value=""
-              id="flexCheckChecked"
-            />
-            <label class="form-check-label" for="flexCheckChecked">
-                قالب های موجود
-            </label>
-
-            </div>
-
-         
-
-          </div>
-
-
-          <div class="br-gray col-8 border border-1"></div>
-
-          <button id="send-stars-btn" class="btn btn-primary btn-sm my-2 w-50 ">
-            ارسال نظر
-          </button>
-
-        </div>
-      </form>
-
-    </div>
-
-    <nav class="navbar navbar-expand-lg bg-white px-2 px-md-5">
-
-      <div class="container-fluid">
-
-
-     
-
-        <a class="navbar-brand  " href="#">
-          <img src="./asset/mainLogo.svg" alt="Bootstrap" width="200" height="50">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ">
-
-            <li class="nav-item dropdown mx-1 ">
-              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                رزومه
-              </a>
-              <ul class="dropdown-menu px-4 border-0 shadow-sm">
-                <li><a class="dropdown-item py-3" href="#">رزومه ساز آنلاین</a></li>
-                <li><a class="dropdown-item py-3" href="#">رزومه چیست؟</a></li>
-                <li><a class="dropdown-item py-3" href="#">قالب های رزومه</a></li>
-                <li><a class="dropdown-item py-3" href="#">نمونه رزومه تکمیل شده</a></li>
-                <li><a class="dropdown-item py-3" href="#">مرکز دانلود رزومه</a></li>
-                <li><a class="dropdown-item py-3" href="#">ساخت رزومه انگلیسی</a></li>
-
-              </ul>
-            </li>
-
-            <li class="nav-item mx-1 ">
-              <a class="nav-link active" aria-current="page" href="#">نمونه رزومه مشاغل</a>
-            </li>
-
-            <li class="nav-item mx-1 ">
-              <a class="nav-link active" aria-current="page" href="#">وب سایت شخصی</a>
-            </li>
-
-            <li class="nav-item mx-1 ">
-              <a class="nav-link active" aria-current="page" href="#">رزومه شرکتی</a>
-            </li>
-
-            <li class="nav-item dropdown mx-1 ">
-              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                راهنما
-              </a>
-              <ul class="dropdown-menu px-4 border-0 shadow-sm">
-                <li><a class="dropdown-item py-3" href="#">سوالات متداول</a></li>
-                <li><a class="dropdown-item py-3" href="#">راهنمای ساخت رزومه</a></li>
-                <li><a class="dropdown-item py-3"  href="#">تماس با ما</a></li>
-                <li><a class="dropdown-item py-3" href="#">درباره ما</a></li>
-
-              </ul>
-            </li>
-           
-            <li class="nav-item mx-1 ">
-              <a class="nav-link active" aria-current="page" href="#">بلاگ</a>
-            </li>
-
-
-
-          </ul>
-
-
-          <a href="#" id="userPannelLink" class="align-items-center o     btn btn btn-outline-primary px-3   ">
-            <i class="bi bi-person mx-1 text-secondary"></i>
-           پنل کاربری
+        <div class="container-fluid">
+  
+  
+       
+  
+          <a class="navbar-brand  " href="#">
+            <img src="./asset/mainLogo.svg" alt="Bootstrap" width="200" height="50">
           </a>
-
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ">
+  
+              <li class="nav-item dropdown mx-1 ">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  رزومه
+                </a>
+                <ul class="dropdown-menu px-4 border-0 shadow-sm">
+                  <li><a class="dropdown-item py-3" href="#">رزومه ساز آنلاین</a></li>
+                  <li><a class="dropdown-item py-3" href="#">رزومه چیست؟</a></li>
+                  <li><a class="dropdown-item py-3" href="#">قالب های رزومه</a></li>
+                  <li><a class="dropdown-item py-3" href="#">نمونه رزومه تکمیل شده</a></li>
+                  <li><a class="dropdown-item py-3" href="#">مرکز دانلود رزومه</a></li>
+                  <li><a class="dropdown-item py-3" href="#">ساخت رزومه انگلیسی</a></li>
+  
+                </ul>
+              </li>
+  
+              <li class="nav-item mx-1 ">
+                <a class="nav-link active" aria-current="page" href="#">نمونه رزومه مشاغل</a>
+              </li>
+  
+              <li class="nav-item mx-1 ">
+                <a class="nav-link active" aria-current="page" href="#">وب سایت شخصی</a>
+              </li>
+  
+              <li class="nav-item mx-1 ">
+                <a class="nav-link active" aria-current="page" href="#">رزومه شرکتی</a>
+              </li>
+  
+              <li class="nav-item dropdown mx-1 ">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  راهنما
+                </a>
+                <ul class="dropdown-menu px-4 border-0 shadow-sm">
+                  <li><a class="dropdown-item py-3" href="#">سوالات متداول</a></li>
+                  <li><a class="dropdown-item py-3" href="#">راهنمای ساخت رزومه</a></li>
+                  <li><a class="dropdown-item py-3"  href="#">تماس با ما</a></li>
+                  <li><a class="dropdown-item py-3" href="#">درباره ما</a></li>
+  
+                </ul>
+              </li>
+             
+              <li class="nav-item mx-1 ">
+                <a class="nav-link active" aria-current="page" href="#">بلاگ</a>
+              </li>
+  
+  
+  
+            </ul>
+  
+  
+            <a href="#" id="userPannelLink" class="align-items-center o     btn btn btn-outline-primary px-3   ">
+              <i class="bi bi-person mx-1 text-secondary"></i>
+             پنل کاربری
+            </a>
+  
+          </div>
+  
+  
         </div>
+  
+      </nav>
+    </header>
+   
+    
+    <div id="resumeResult" class="position-absolute vw-100 vh-100 d-flex align-items-center justify-content-center" >
+        <div class="resume-result-box container h-100 row">
+            <div class="right col-4 ">
+
+            </div>
+            <div class="left col-8 border border-start-0  ">
+
+            </div>
+        </div>
+    </div>
+   
+    <main>
 
 
+
+      <div class="top-btns position-absolute vw-100  d-none d-xl-flex justify-content-between ">
+
+        <div class="resume-progress-circle d-flex flex-column  text-center  ms-4 bg-prim2ary justify-content-around align-items-center ">
+  
+          <div class="text">
+            <span class=" mt-1  d-block  ">رزومه ساز آنلاین</span>
+            <span class="text-secondary my-1 d-block ">ساخت رزومه در 10 دقیقه</span>
+          </div>
+        
+          <div class="progress-circle mt-2 bg-white d-flex align-items-center justify-content-center">
+              <div class="inside-circle border   align-items-center justify-content-center h5  my-auto  d-flex">
+                <span id="user-resume-progress" class=" ">
+                  %0 
+                </span>
+              </div>
+  
+          </div>
+        </div>
+  
+        <button id="leaveingCommentBTN" class="btn btn-danger h-50 pb-2 me-3  text-white border-0 ">
+          نظر دهید
+        </button>
+  
+      
+      </div>
+  
+      <!-- give star to resume box-->
+      <div id="comment-box" class="position-absolute  d-none align-items-center justify-content-center ">
+  
+        <form action="#">
+          <div class="star-box bg-white py-0  position-relative text-center row align-items-center justify-content-center  ">
+  
+            <button id="closeStarBoxBTN" class="border-0  d-flex align-items-center justify-content-center  text-white position-absolute">
+              <i class="bi bi-x-lg" id="closeStarBox"></i>
+            </button>
+  
+            <span id="star-title" class="pt-2 col-12">
+              به رزومه ساز چه امتیازی می دهید؟
+            </span>
+            <div class="stars-row col-6 py-3 d-flex align-items-center justify-content-between">
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+  
+  
+  
+            <div class="indicators d-none flex-column align-items-center my-">
+              <span class="indicators-title py-2 fw-bold ">
+                نقات ضعف رزومه ساز چیست؟
+              </span>
+  
+              <div class="item py-1">
+                <input
+                class="form-check-input p-2"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              />
+              <label class="form-check-label " for="flexCheckChecked">
+                 سهولت استفاده
+              </label>
+  
+              </div>
+  
+              <div class="item py-1">
+                <input
+                class="form-check-input p-2"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                سرعت و عملکرد
+              </label>
+  
+              </div>
+  
+              <div class="item py-1">
+                <input
+                class="form-check-input p-2"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                  قالب های موجود
+              </label>
+  
+              </div>
+  
+           
+  
+            </div>
+  
+  
+            <div class="br-gray col-8 border border-1"></div>
+  
+            <button id="send-stars-btn" class="btn btn-primary btn-sm my-2 w-50 ">
+              ارسال نظر
+            </button>
+  
+          </div>
+        </form>
+  
       </div>
 
-    </nav>
-
-
-    <main>
     <div class="main-container   mx-auto my-5 min-vh-50">
+
       <!-- RESUME PAGES TITLES -->
       <ul
         class="resume-pages-list justify-content-evenly align-items-center shadow-sm list-unstyled  bg-white py-3 d-flex  px-3"
@@ -259,6 +276,7 @@
         </li>
       </ul>
 
+      <!-- all the inputs to get info  -->
       <form id="formInputsForm" action="#">
       <!-- INDEX 1 -->
       <div id="index1" class="d-flex box flex-column test  ">
@@ -1574,6 +1592,7 @@
     </form>
         
     </div>
+
    </main>
 
     <!-- JS file --->

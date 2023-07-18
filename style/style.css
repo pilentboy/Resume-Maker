@@ -45,7 +45,7 @@ body{
 }
 .resume-pages-list{
 	z-index:200;
-	
+   
 }
 
 
@@ -287,10 +287,10 @@ p{
 }
 
 #comment-box{
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
     z-index: 500;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -344,3 +344,30 @@ p{
 .indicators label{
     font-size: 12px;
 }
+
+
+
+
+/* resume result */
+
+#resumeResult{
+    z-index: 999;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.916);
+    top: 0;
+}
+
+
+#resumeResult .resume-result-box{
+    width: 60%;
+}
+.resume-result-box .right{
+    background-color: #292c31;
+}
+
+.resume-result-box .left{
+    background-color: white;
+    border-color: #0f838f !important;
+    border-width: 12px !important;
+}
+
