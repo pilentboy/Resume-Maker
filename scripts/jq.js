@@ -122,25 +122,30 @@ $(document).ready(function () {
 
 
     /*-----add more achievement box*/
-    const experRemoveBTN=$(".experice-container .del-exper-container-btn").clone(); 
-    $(".exper-input").keydown(function (e) {
-        if(e.which == 13){       
-            let expInpCont=$(".experice-container:eq(0)").clone(); 
+    $(document).on("keydown",function (e) {
+        
+        if($(e.target).hasClass("form-control") && e.which == 13){      
+            let expInpCont=$(".experice-container:eq('0')").clone(); 
             $(".achievement-box").append(expInpCont); 
-            $(".experice-container:eq(0) > .del-exper-container-btn").remove()
-            $(".experice-container:gt(1)").append(experRemoveBTN)
         }
 
-        if($(".experice-container").length == 0){
-            $(".experice-container:eq(0)").append(experRemoveBTN)
-        }
-        
       })
+  
 
     
-    /* RRemove*/
+    /* Remove experice-container*/
 
-   
+    $(document).on("click",function(e){
+       
+        if($(e.target).hasClass("del-exper-input-btn")){
+          if($(e.target).parent().index() > 2){
+            $(e.target).parent().remove()
+          }
+        }
+    })
+
+   //----------end
+
     //-------------- ADDING Image
 
     $("#selectImgBTN").change(function(){
