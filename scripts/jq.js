@@ -1,104 +1,13 @@
 $(document).ready(function () {
     
-
-    // FUNCTIONS FOR THE BTNS ARE FOR MAKING A COPY OF THEIR ABOVE INPUTS
-    //--------------ADDING A NEW SOCIAL MEDIA BOX 
-    $("#socialParentBTN").click(function (e) { 
-      
-        let socialMediaBox=$("#soialMediaCouple").clone();
-
-        $("#addingSocialParent").before(socialMediaBox);
+        $(document).on("click",function (e) {
+            let btnClickedID=$(e.target).attr("id");
+            let cloneBox=$(`.${btnClickedID}:eq('0')`).clone()
+            $(`#${btnClickedID + 'BTNContainer'}`).before(cloneBox)
         
-    });
-    //--------------
+        })
 
 
-    //--------------ADDING A NEW EduExperience
-        $("#addingEduExpParentBTN").click(function (e) { 
-            e.preventDefault();
-            let eduExperienceBox=$("#eduExperience").clone();
-    
-            $("#addingEduExpParent").before(eduExperienceBox);
-            
-        });
-    //--------------
-    
-    //--------------ADDING A NEW workingExperience
-        $("#addinWoExpBTN").click(function (e) { 
-       
-            let workingExperienceBox=$("#workingExperience").clone();
-    
-            $("#addinWoExp").before(workingExperienceBox);
-            
-        });
-    //--------------
-    
-
-    //--------------ADDING A NEW workingExperience
-        $("#LanSkillParentBTN").click(function (e) { 
-       
-            let workingExperienceBox=$("#userLanguageSkill").clone();
-    
-            $("#LanSkillParent").before(workingExperienceBox);
-            
-        });
-    //--------------
-
-    
-    //--------------ADDING A NEW workingExperience
-    $("#addingLanSkillBTN").click(function (e) { 
-       
-        let workingExperienceBox=$("#userLanguageSkill").clone();
-
-        $("#addingLanSkill").before(workingExperienceBox);
-        
-    });
-    //--------------
-
-    
-    //--------------ADDING A NEW Experimentalskill
-       $("#addingExpeskillBTN").click(function (e) { 
-       
-        let workingExperienceBox=$("#Experimentalskill").clone();
-
-        $("#addingExpeskill").before(workingExperienceBox);
-        
-    });
-    //--------------
-
-
-    //--------------ADDING A NEW CertificateSkill
-    $("#addingCertSkillBTN").click(function (e) { 
-       
-        let workingExperienceBox=$("#CertificateSkill").clone();
-
-        $("#addingCertSkill").before(workingExperienceBox);
-        
-    });
-    //--------------
-
-    
-    //--------------ADDING A NEW Project Box
-    $("#addingProjectBTN").click(function (e) { 
-       
-        let workingExperienceBox=$("#CertificateSkill").clone();
-
-        $("#addingProject").before(workingExperienceBox);
-        
-    });
-    //--------------
-
-    //--------------ADDING A NEW Reseach
-    $("#addingResearchBTN").click(function (e) { 
-       
-        let workingExperienceBox=$("#Research").clone();
-
-        $("#addingResearch").before(workingExperienceBox);
-        
-    });
-    //--------------
-
-    // END
 
     //-------------- change resume box 
 
@@ -123,7 +32,7 @@ $(document).ready(function () {
 
     /*-----add more achievement box*/
     $(document).on("keydown",function (e) {
-        
+
         if($(e.target).hasClass("form-control") && e.which == 13){      
             let expInpCont=$(".experice-container:eq('0')").clone(); 
             $(".achievement-box").append(expInpCont); 
@@ -167,27 +76,12 @@ $(document).ready(function () {
     })
     //-------------- END ADDING IMAGE 
 
-    // ul links
-    // add position sticky to form ul
-    // $(window).scroll(function () { 
-    //     var offsetTop = $(window).scrollTop();
-       
-    //     if (offsetTop >= 60){
-    //         $(".resume-pages-list").addClass("position-sticky top-0 index-top")
-    //     }else{
-    //         $(".resume-pages-list").removeClass("position-sticky top-0 index-top")
-    //     }
- 
-    // });
-
-    // end
 
 
     $("#formInputsForm").submit(function (e) { 
         e.preventDefault();
     });
 
-  
 
     
     /* display star box*/
