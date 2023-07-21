@@ -1,12 +1,14 @@
 $(document).ready(function () {
     
-        $(document).on("click",function (e) {
+
+    // to make copy of the box when its btn clicked
+    $(document).on("click",function (e) {
             let btnClickedID=$(e.target).attr("id");
-            let cloneBox=$(`.${btnClickedID}:eq('0')`).clone()
+            let cloneBox=$(`.${btnClickedID}:eq('0')`).clone(true)
+            cloneBox.find("*").val('')
             $(`#${btnClickedID + 'BTNContainer'}`).before(cloneBox)
         
-        })
-
+    })
 
 
     //-------------- change resume box 
