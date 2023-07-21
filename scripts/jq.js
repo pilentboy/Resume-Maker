@@ -122,29 +122,23 @@ $(document).ready(function () {
 
 
     /*-----add more achievement box*/
-    $(".achiv-input").keydown(function (e) { 
-
-        if(e.which == 13){
-            let expInpCont=$(".experice-input:eq('0')").clone();
-           
-            $(".achievement-box").append(expInpCont);
-         
+    const experRemoveBTN=$(".experice-container .del-exper-container-btn").clone(); 
+    $(".exper-input").keydown(function (e) {
+        if(e.which == 13){       
+            let expInpCont=$(".experice-container:eq(0)").clone(); 
+            $(".achievement-box").append(expInpCont); 
+            $(".experice-container:eq(0) > .del-exper-container-btn").remove()
+            $(".experice-container:gt(1)").append(experRemoveBTN)
         }
-     
-    });
 
+        if($(".experice-container").length == 0){
+            $(".experice-container:eq(0)").append(experRemoveBTN)
+        }
+        
+      })
 
     
-
-    $(".achiv-input").click(function (e) {
-        if(e.which == 13){            
-            let expInpCont=$(".experice-input:eq('0')").clone();
-            
-       
-            $(".achievement-box").append(expInpCont);
-         
-        }
-      })
+    /* RRemove*/
 
    
     //-------------- ADDING Image
@@ -270,7 +264,6 @@ $(document).ready(function () {
     let progress=0;
     let selectedInput;
     $("input,select,textarea").change(function () { 
-        console.log("dqdqd")
         if($(this).val() != undefined){
             selectedInput=$(this).attr("used");
     
