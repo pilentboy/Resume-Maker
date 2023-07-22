@@ -320,27 +320,4 @@ p{
     font-size: 12px;
 }
 
-/* resume result */
-
-#resumeResult{
-    z-index: 999;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.916);
-    top: 0;
-    left: 0;
-}
-
-
-#resumeResult .resume-result-box{
-    width: 60%;
-}
-.resume-result-box .right{
-    background-color: #292c31;
-}
-
-.resume-result-box .left{
-    background-color: white;
-    border-color: #0f838f !important;
-    border-width: 12px !important;
-}
 
