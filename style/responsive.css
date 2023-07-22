@@ -2,14 +2,19 @@
 
 @media only screen and (max-width:576px)  {
     .resume-pages-list{
-        background-color: transparent !important;
         border: none !important;
         box-shadow: none !important;
-        overflow-x: auto !important
+        overflow-x: hidden !important
     }
 
-    .resume-pages-list li.li-color::after {
+    .resume-pages-list li.active-index::after {
         display: none !important;
+    }
+
+    .resume-pages-list li.active-index{
+        border-radius: 10px;
+        color: white !important;
+        background-color: #ff9f00 !important;
     }
 
     .resume-pages-list li{

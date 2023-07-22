@@ -16,8 +16,8 @@ $(document).ready(function () {
     $(".resume-pages-list li").click(function (e) { 
         let titleCliced=String($(this).index())
 
-        $(".resume-pages-list li").removeClass("li-color")
-        $(this).addClass("li-color");
+        $(".resume-pages-list li").removeClass("active-index")
+        $(this).addClass("active-index");
 
        
         $(".box").removeClass("d-flex")

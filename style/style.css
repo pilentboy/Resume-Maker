@@ -150,11 +150,11 @@ p{
     color: rgb(0, 180, 246);
 }
 
-.li-color{
+.active-index{
     color: rgb(0, 180, 246) !important;
 }
 
-.resume-pages-list li.li-color::after {
+.resume-pages-list li.active-index::after {
     position: absolute;
     content: "";
     bottom: -80%;
@@ -165,7 +165,7 @@ p{
     transition: all 0.3s;
 }
 
-.resume-pages-list li.li-color i{
+.resume-pages-list li.active-index i{
     color: #ff9f00;
 }
 
