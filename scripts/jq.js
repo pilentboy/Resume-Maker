@@ -192,21 +192,19 @@ $(document).ready(function () {
 
     /* download resume*/
 
-    
-    $("#resumeResult").hide(0)
-    
-
     $("#downloadResumeBTN").click(function(){
+        $("header").addClass("d-none")
         $("body").addClass("overflow-y-hidden");
-        $("#resumeResult").show(500)
+        $("#resumeResult").removeClass("d-none")
     })
 
 
     $(document).on("click", function (e) {
     
         if($(e.target).attr("id") == "resumeResult"){
+            $("header").removeClass("d-none")
             $("body").removeClass("overflow-y-hidden");
-            $("#resumeResult").hide(500)
+            $("#resumeResult").addClass("d-none")
         }
     });
 
