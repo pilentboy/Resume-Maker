@@ -5,7 +5,7 @@ $(document).ready(function () {
     $(document).on("click",function (e) {
             let btnClickedID=$(e.target).attr("id");
             let cloneBox=$(`.${btnClickedID}:eq('0')`).clone(true)
-            cloneBox.find("*").val('')
+            cloneBox.find("input,textarea").val('')
             $(`#${btnClickedID + 'BTNContainer'}`).before(cloneBox)
         
     })

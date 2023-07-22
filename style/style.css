@@ -189,11 +189,7 @@ p{
     z-index: 50;
 }
 
-@media only screen and (max-width:576px){
-    .output-options{
-        top: 90%;
-    }
-}
+
 
 .nav-link{
     transition: all 0.3s;
@@ -225,28 +221,7 @@ p{
     top: 0;
 }
 
-/* Responsive rsume pages list*/
 
-@media only screen and (max-width:576px)  {
-    .resume-pages-list{
-        background-color: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-        overflow-x: auto !important
-    }
-
-    .resume-pages-list li.li-color::after {
-        display: none !important;
-    }
-
-    .resume-pages-list li{
-       
-    } 
-
-    .resume-pages-list li .bi-caret-left-fill{
-        display: none;
-    }
-}
 
 .top-btns{
     top:17%;
