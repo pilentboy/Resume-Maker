@@ -1,0 +1,47 @@
+
+#resumeResult{
+    z-index: 999;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.916);
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+
+#resumeResult .resume-result-box{
+    width: 60%;
+}
+
+.resume-result-box .right{
+    background-color: #292c31;
+}
+
+.resume-result-box .left{
+    background-color: white;
+    border-color: #0f838f !important;
+    border-width: 12px !important;
+}
+
+#resumeProfileImg{
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+}
+
+.resume-result-title-bg{
+    background-color: #0f838f;
+}
+
+#personaleUserInfo{
+   
+}
+
+.skil-row div{
+
+}
+
+.skil-row .progress-circle-element{
+    width: 80px;
+    height: 80px;
+}
